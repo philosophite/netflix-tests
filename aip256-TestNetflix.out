@@ -1,0 +1,109 @@
+.....EEEEEE.......EEEEEE
+======================================================================
+ERROR: test_print (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 113, in test_print
+    netflix_print(w, 1)
+  File "/Users/Alex/Google Drive/Fall 2014/CS 313E*/Projects/Netflix/cs313e-netflix/Netflix.py", line 100, in netflix_print
+    w.write(str(a) + "\n")
+TypeError: unicode argument expected, got 'str'
+
+======================================================================
+ERROR: test_read_1 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 21, in test_read_1
+    r	= StringIO("")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_read_2 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 26, in test_read_2
+    r	= StringIO("1:\n")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_read_3 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 31, in test_read_3
+    r	 = StringIO("1:\n30878")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_read_4 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 36, in test_read_4
+    r	 = StringIO("a")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_read_5 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 41, in test_read_5
+    r	 = StringIO("\n")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_solve_1 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 69, in test_solve_1
+    r = StringIO("")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_solve_2 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 75, in test_solve_2
+    r = StringIO("1:")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_solve_3 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 81, in test_solve_3
+    r = StringIO("1:\n30878")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_solve_4 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 88, in test_solve_4
+    r = StringIO("1:\n30878\n6:\n1064641")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_solve_5 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 95, in test_solve_5
+    r = StringIO("1:\n30878\n6:\n7:")
+TypeError: initial_value must be unicode or None, not str
+
+======================================================================
+ERROR: test_solve_6 (__main__.TestNetflix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestNetflix.py", line 102, in test_solve_6
+    r = StringIO("1:\n6:\n7:")
+TypeError: initial_value must be unicode or None, not str
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.002s
+
+FAILED (errors=12)
+Name          Stmts   Miss Branch BrMiss  Cover   Missing
+---------------------------------------------------------
+Netflix          91     45     28     19    46%   41-60, 116-142, 176, 182-185
+TestNetflix     102     32      0      0    69%   22-23, 27-28, 32-33, 37-38, 42-43, 70-72, 76-78, 82-85, 89-92, 96-99, 103-105, 114
+---------------------------------------------------------
+TOTAL           193     77     28     19    57%   
